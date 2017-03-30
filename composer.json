@@ -12,10 +12,7 @@
             "name": "lcbcruz"
         }
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        },
+    "extra": {        
         "flarum-extension": {
             "title": "Portuguese",
             "icon": {
