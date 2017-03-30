@@ -25,5 +25,5 @@ The same command can be used to update independently the Portuguese language pac
 
 1. Via command line go to `cd flarum_root_directory/extensions/` directory.
 2. Clone this repository with the command `git clone https://github.com/lcbcruz/flarum-portuguese.git`.
-3. Go to the Administration panel, then "Extensions" tab and enable the "Brazilian Portuguese" language pack extension.
+3. Go to the Administration panel, then "Extensions" tab and enable the "Portugal Portuguese" language pack extension.
 4. Go to "Basics" tab and change the language. `Português (Portugal)(pt-PT)`.
