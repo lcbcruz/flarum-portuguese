@@ -2,14 +2,11 @@
     "name": "lcbcruz/flarum-portuguese",
     "type": "flarum-extension",
     "description": "Portugal portuguese language pack.",
-    "homepage": "https://github.com/lcbcruz/flarum-portuguese",
-    "keywords": ["portugal","portuguese","language","locale","localization","translation"],
+    "keywords": ["locale"],
     "license": "MIT",
     "authors": [
 	    {
-		    "name": "Luís Cruz",
-		    "email": "lcbcruz82@gmail.com",
-		    "homepage": "https://www.centralgest.com"
+		    "name": "Luís Cruz"
 	    }
            
     ],
@@ -17,9 +14,8 @@
 	    "issues": "https://github.com/lcbcruz/flarum-portuguese/issues",
 	    "source": "https://github.com/lcbcruz/flarum-portuguese"
     },
-    "require": 
-    {
-	    "flarum/core": "^0.1.0-beta.6"
+    "require": {
+        "flarum/core": "^0.1.0-beta.6"
     },
     "extra": {
         "branch-alias": {
@@ -35,7 +31,7 @@
             }
         },
         "flarum-locale": {
-            "code": "pt-PT",
+            "code": "pt-pt",
             "title": "Português Portugal"
         }
     }
