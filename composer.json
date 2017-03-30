@@ -1,19 +1,9 @@
 {
     "name": "lcbcruz/flarum-portuguese",
     "type": "flarum-extension",
-    "description": "Portugal portuguese language pack.",
+    "description": "Portuguese language pack.",
     "keywords": ["locale"],
     "license": "MIT",
-    "authors": [
-	    {
-		    "name": "Luís Cruz"
-	    }
-           
-    ],
-    "support": {
-	    "issues": "https://github.com/lcbcruz/flarum-portuguese/issues",
-	    "source": "https://github.com/lcbcruz/flarum-portuguese"
-    },
     "require": {
         "flarum/core": "^0.1.0-beta.6"
     },
@@ -22,7 +12,7 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "Português Portugal",
+            "title": "Portuguese",
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#00247d",
@@ -32,7 +22,7 @@
         },
         "flarum-locale": {
             "code": "pt-pt",
-            "title": "Português Portugal"
+            "title": "Portuguese"
         }
     }
 }
