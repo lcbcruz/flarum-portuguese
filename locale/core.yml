@@ -6,6 +6,11 @@ core:
 
   # Strings in this namespace are used by the admin interface.
   admin:
+     # These translations are used in the placeholder Add Extension modal dialog.
+    add_extension:
+      developer_text: "Se és um programador, podes <a>ler os documentos</a> e criar as tuas próprias extensões."    
+      install_text: "Enquanto isso, podes procurar extensões na <a>Flarum Community site</a> e instalá-las manualmente usando o Composer."
+      temporary_text: "Num futuro não muito distante, esta caixa de diálogo permitirá adicionar extensões ao fórum com facilidade."
 
     # These strings are used in the Appearance page.
     appearance:
@@ -55,6 +60,23 @@ core:
       singular_placeholder: Singular (ex. Moderador)
       submit_button: => core.ref.save_changes
       title: Criar Grupo
+
+     # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: Conta de SMTP
+      addresses_heading: Endereços
+      driver_label: Driver
+      encryption_label: Encryption
+      from_label: Sender
+      heading: => core.ref.email
+      host_label: Host
+      password_label: => core.ref.password
+      port_label: Port
+      server_heading: Sevidor de SMTP
+      submit_button: Guardar Alterações
+      text: Configure as definições de SMTP e os endereços que o fórum utilizará para enviar e-mails.
+      username_label: => core.ref.username
+
 
     # These strings are used in the Extensions page.
     extensions:
