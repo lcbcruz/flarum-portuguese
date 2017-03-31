@@ -2,7 +2,7 @@
 
 https://discuss.flarum.org
 
-Complete; Flarum version 0.1.0-beta4. Portuguese (Portugal) language pack. Português (Portugal), pt-PT
+Complete; Flarum version 0.1.0-beta6. Portuguese (Portugal) language pack. Português (Portugal), pt-PT
 
 ## Installation:
 
