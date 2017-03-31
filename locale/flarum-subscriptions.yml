@@ -28,8 +28,9 @@ flarum-subscriptions:
 
     # These strings are used in the Settings page.
     settings:
+      follow_after_reply_label: Seguir automaticamente os tópicos que eu respondo
       notify_new_post_label: Alguém posta num tópico que estou seguindo
-
+      
     # These strings are used in the subscription menu displayed to the right of the post stream.
     sub_controls:
       follow_button: => flarum-subscriptions.ref.follow

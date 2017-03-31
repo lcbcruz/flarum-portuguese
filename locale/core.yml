@@ -10,8 +10,9 @@ core:
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
       developer_text: "Se és um programador, podes <a>ler os documentos</a> e criar as tuas próprias extensões."
-      install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
+      install_text: "Entretanto, pode procurar extensões no <a>Flarum Community site</a> e instalá-las manualmente usando o Composer."
       temporary_text: "Num futuro não muito distante, esta caixa de diálogo permitirá adicionar extensões ao fórum com facilidade."
+      title: Adicionar Extensão
 
     # These translations are used in the Appearance page.
     appearance:
@@ -66,7 +67,7 @@ core:
     # These translations are used in the Edit Group modal dialog.
     edit_group:
       color_label: Cor
-      delete_button: Apgar Grupo
+      delete_button: Apagar Grupo
       delete_confirmation: "Tem certeza que deseja apagar este grupo? Os membros do grupo NÃO serão apagados."
       icon_label: Ícone
       icon_text: "Digite o nome de alguma classe de ícone do <a>FontAwesome</a>, <em>sem</em> o prefixo <code>fa-</code>."
@@ -165,8 +166,8 @@ core:
 
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: Remove
-      upload_button: Choose an Image...
+      remove_button: Remover
+      upload_button: Escolha uma imagem...
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -267,11 +268,11 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Inicie um Tópico
+      cannot_start_discussion_button: Iniciar um Tópico
       mark_all_as_read_confirmation: "Tem certeza de que deseja marcar todos os tópicos como lidos?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Atualizar
-      start_discussion_button: Inicie um Tópico
+      start_discussion_button: Iniciar um Tópico
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
@@ -365,7 +366,7 @@ core:
       bio_placeholder: Escreve alguma coisa sobre si
       discussions_link: => core.ref.discussions
       in_discussion_text: "EM {discussion}"
-      joined_date_text: "Entrou {ago}"
+      joined_date_text: "Entrou há {ago}"
       online_text: Online
       posts_load_more_button: => core.ref.load_more
       posts_link: Posts
@@ -487,7 +488,7 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: ´Todos os Tópicos
+    all_discussions: Todos os Tópicos
     change_email: Alterar Email
     change_password: Alterar Palavra-passe
     confirm_password: Confirmar Palavra-passe

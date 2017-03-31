@@ -31,6 +31,7 @@ flarum-tags:
 
     # These strings are used in the Permissions page of the admin interface.
     permissions:
+      allow_edit_tags_label: Permitir edição de tags
       restrict_by_tag_heading: Restringir por Tag
       tag_discussions_label: Tópicos da Tag
 
