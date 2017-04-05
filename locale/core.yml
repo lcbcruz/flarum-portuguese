@@ -9,9 +9,9 @@ core:
 
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
-      developer_text: "Se és um programador, podes <a>ler os documentos</a> e criar as tuas próprias extensões."
-      install_text: "Entretanto, pode procurar extensões no <a>Flarum Community site</a> e instalá-las manualmente usando o Composer."
-      temporary_text: "Num futuro não muito distante, esta caixa de diálogo permitirá adicionar extensões ao fórum com facilidade."
+      developer_text: "Se és um programador, podes ler os <a>documentos</a> e criar as tuas próprias extensões."
+      install_text: "Entretanto, pode procurar extensões no site <a>Flarum Community</a> e instalá-las manualmente usando o Composer."
+      temporary_text: "Num futuro não muito distante, esta caixa de diálogo permitirá adicionar extensões ao fórum de forma simples."
       title: Adicionar Extensão
 
     # These translations are used in the Appearance page.
@@ -28,7 +28,7 @@ core:
       edit_css_button: Editar CSS Personalizado
       enter_hex_message: Por favor insira com um código de cor em hexadecimal (ex:#ffffff).
       favicon_heading: Favicon
-      favicon_text: Carregue uma imagem para ser exibida como ícone de atalho do fórum.
+      favicon_text: Carregue uma imagem para ser exibida como ícone do fórum.
       logo_heading: Logo
       logo_text: Carregue uma imagem para ser exibida no lugar do título do fórum.
       submit_button: Guardar Alterações
@@ -49,14 +49,14 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "Este <strong>software beta</strong> é fornecido para que possa ajudar-nos a testá-lo e a melhorá-lo; não deve ser usado em produção."
+      beta_warning_text: ""
       contributing_text: "Quer procurar bugs e contribuir? Leia a <a>documentação de Contribuição</a>."
       extension_text: "Interessado em desenvolver extensões? Leia a <a>documentação de Extensões</a>."
-      features_text: "Tem uma ideia para melhorar uma funcionalidade? Diga-nos sobre isso na <a>tag Features</a>."
-      support_text: "Encontrou um bug? Por favor reporte-o no nosso fórum, sob a <a>tag Support</a>."
-      troubleshooting_text: "Está a ter problemas? Siga as instruções na <a>documentação de Solução de Problemas</a>."
-      version_text: "Obrigado por experimentar o Flarum! Está a correr a versão {version}."
-      welcome_text: "Bem-vindo ao Flarum Beta!"
+      features_text: "Tem uma ideia para melhorar uma funcionalidade? Diga-nos sobre isso na tag <a>Features</a>."
+      support_text: "Encontrou um bug? Por favor reporte-o no nosso fórum, sob a tag <a>Support</a>."
+      troubleshooting_text: "Está a ter problemas? Siga as instruções na documentação de <a>Solução de Problemas</a>."
+      version_text: "Obrigado por utilizar o Flarum! Está a correr a versão {version}."
+      welcome_text: "Bem-vindo ao Flarum!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -131,7 +131,7 @@ core:
     # These translations are used in the Permissions page of the admin interface.
     permissions:
       allow_renaming_label: Permitir renomear
-      allow_post_editing_label: Permitir editar postagem
+      allow_post_editing_label: Permitir editar publicações
       create_heading: Criar
       delete_discussions_forever_label: Apagar tópicos permanentemente
       delete_discussions_label: Apagar tópicos
@@ -177,7 +177,7 @@ core:
       confirmation_message: => core.ref.confirmation_email_sent
       confirm_password_placeholder: => core.ref.confirm_password
       dismiss_button: => core.ref.okay
-      incorrect_password_message: A palavra-passe não está incorreta.
+      incorrect_password_message: A palavra-passe não está correta.
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
@@ -197,8 +197,8 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: Escreva um Post...
-      discard_confirmation: "Você não postou o seu tópico. Deseja descartá-lo?"
-      submit_button: Postar Tópico
+      discard_confirmation: "Você não publicou o seu tópico. Deseja descartá-lo?"
+      submit_button: Publicar Tópico
       title: => core.ref.start_a_discussion
       title_placeholder: Título do Tópico
 
@@ -211,9 +211,9 @@ core:
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Você não postou a sua resposta. Deseja descartá-la?"
-      posted_message: Sua resposta foi postada.
-      submit_button: Postar Resposta
+      discard_confirmation: "Você não publicou a sua resposta. Deseja descartá-la?"
+      posted_message: Sua resposta foi publicada.
+      submit_button: Publicar Resposta
       view_button: Ver
 
     # These translations are used by the discussion control buttons.
@@ -231,7 +231,7 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Parece que não há tópicos por aqui. Por que não cria uma?"
+      empty_text: "Ainda não existem tópicos publicados. Porque não cria um?"
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: Marcar como Lido
       replied_text: "{username} respondeu {ago}"
@@ -356,7 +356,7 @@ core:
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Brm-vindo, {username}!"
+      welcome_text: "Bem-vindo, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
@@ -376,7 +376,7 @@ core:
     user_controls:
       button: Controlos
       delete_button: => core.ref.delete
-      delete_confirmation: "Tem a certeza que deseja apagar este utilizador? Todos os posts do utilizador serão apagados."
+      delete_confirmation: "Tem a certeza que deseja apagar este utilizador? Todas as publicações do utilizador serão apagadas."
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -398,7 +398,7 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Oops! Algo correu mal. Por favor refresque a página e tente novamente."
+      generic_message: "Oops! Algo correu mal. Por favor atualize a página e tente novamente."
       permission_denied_message: Não tem permissão para realizar esta operação.
       not_found_message: O recurso solicitado não foi encontrado.
       rate_limit_exceeded_message: "Foi muito rápido. Por favor, tente novamente em alguns segundos."
@@ -492,7 +492,7 @@ core:
     change_email: Alterar Email
     change_password: Alterar Palavra-passe
     confirm_password: Confirmar Palavra-passe
-    confirmation_email_sent: "Enviamos-lhe um email de confirmação para {email}. Se receber intertanto, verifique sua caixa de spam."
+    confirmation_email_sent: "Enviamos-lhe um email de confirmação para {email}. Se não receber dentro de 1 ou 2 minutos, verifique sua caixa de spam."
     delete: Apagar
     delete_forever: Apagar Permanentemente
     discussions: Tópicos
