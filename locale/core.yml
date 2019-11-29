@@ -21,10 +21,13 @@ core:
       colors_text: "Escolha duas cores para o seu fórum. A primeira será usada como cor de destaque, enquanto a segunda será usada para os elementos de fundo."
       custom_header_heading: Cabeçalho Personalizado
       custom_header_text: "Adicione HTML para ser exibido no topo da página, acima do próprio cabeçalho do Flarum."
+      custom_footer_heading: "Rodapé Personalizado"
+      custom_footer_text: "Adicione HTML para ser exibido no fundo da página"
       custom_styles_heading: Estilos Personalizados
       custom_styles_text: Personalize a aparência do seu fórum adicionando o seu próprio código LESS/CSS a ser aplicado em cima dos estilos padrões do Flarum.
       dark_mode_label: Modo Escuro
       edit_header_button: Editar Cabeçalho Personalizado
+      edit_footer_button: Editar Rodapé Personalizado
       edit_css_button: Editar CSS Personalizado
       enter_hex_message: Por favor insira com um código de cor em hexadecimal (ex:#ffffff).
       favicon_heading: Favicon
@@ -43,6 +46,7 @@ core:
       home_page_heading: Página Inicial
       home_page_text: "Escolha a página inicial que os utilizadores irão ver quando visitarem o seu fórum. Ao entrar com um valor personalizado, use o caminho à partir da raíz do fórum."
       saved_message: Suas alterações foram guardadas.
+      show_language_selector_label: "Mostrar selector de língua no frontend"
       submit_button: => core.ref.save_changes
       welcome_banner_heading: "Banner de Boas-vindas"
       welcome_banner_text: "Configure o texto do banner na página Todos os Tópicos. Utilize isto para dar as boas-vindas aos visitantes do seu fórum."
@@ -50,10 +54,12 @@ core:
     # These translations are used in the Dashboard page.
     dashboard:
       beta_warning_text: ""
+      clear_cache_button: "Limpar cache"
       contributing_text: "Quer procurar bugs e contribuir? Leia a <a>documentação de Contribuição</a>."
       extension_text: "Interessado em desenvolver extensões? Leia a <a>documentação de Extensões</a>."
       features_text: "Tem uma ideia para melhorar uma funcionalidade? Diga-nos sobre isso na tag <a>Features</a>."
       support_text: "Encontrou um bug? Por favor reporte-o no nosso fórum, sob a tag <a>Support</a>."
+      tools_button: "Opções"
       troubleshooting_text: "Está a ter problemas? Siga as instruções na documentação de <a>Solução de Problemas</a>."
       version_text: "Obrigado por utilizar o Flarum! Está a correr a versão {version}."
       welcome_text: "Bem-vindo ao Flarum!"
@@ -63,6 +69,11 @@ core:
       customize_text: "Personalize a aparência do fórum adicionando o teu código LESS / CSS para aplicar sobre os <a>estilos padrão do Flarum</a>."
       submit_button: => core.ref.save_changes
       title: Editar CSS personalizado
+
+    edit_footer:
+      customize_text: "Adicione HTML para ser exibido no fundo da página"
+      submit_button: => core.ref.save_changes
+      title: Editar Rodapé Personalizado
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
@@ -87,14 +98,30 @@ core:
     email:
       account_heading: Conta de SMTP
       addresses_heading: Endereços
+      driver_heading: Escolher um Driver
       driver_label: Driver
       encryption_label: Encryption
       from_label: Sender
       heading: => core.ref.email
       host_label: Host
+      mail_host_label: Servidor
+      mail_mandrill_secret_label: Segredo
+      mail_mailgun_secret_label: Segredo
+      mail_port_label: Porta
+      mail_encryption_label: Criptografia
+      mail_ses_key_label: Chave
+      mail_ses_region_label: Região
+      mail_ses_secret_label: Segredo
+      mail_username_label: Utilizador
+      mail_password_label: Password
+      mailgun_heading: Mailgun
+      mail_mailgun_domain_label: Domínio
+      mandrill_heading: Mandrill
       password_label: => core.ref.password
       port_label: Port
       server_heading: Sevidor de SMTP
+      ses_heading: ses
+      smtp_heading: Servidor SMTP
       submit_button: Guardar Alterações
       text: Configure as definições de SMTP e os endereços que o fórum utilizará para enviar e-mails.
       username_label: => core.ref.username
@@ -135,8 +162,11 @@ core:
       create_heading: Criar
       delete_discussions_forever_label: Apagar tópicos permanentemente
       delete_discussions_label: Apagar tópicos
+      delete_posts_label: Apagar posts
       delete_posts_forever_label: Apagar posts permanentemente
       edit_and_delete_posts_label: Editar e apagar posts
+      edit_posts_label: Editar posts
+      edit_users_label: Editar utilizadores
       global_heading: Global
       moderate_heading: Moderar
       new_group_button: Novo Grupo
@@ -148,6 +178,8 @@ core:
       start_discussions_label: Iniciar tópicos
       view_discussions_label: Ver tópicos
       view_post_ips_label: Ver endereço de IP do Post
+      view_last_seen_at_label: Mostrar visto pela última vez
+      view_user_list_label: Ver Lista de Utilizadores
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -193,6 +225,7 @@ core:
       exit_full_screen_tooltip: Sair de Ecrã Inteiro
       full_screen_tooltip: Ecrã Inteiro
       minimize_tooltip: Minimizar
+      preview_tooltip: Pré-Visualizar
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -240,9 +273,11 @@ core:
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
       email_label: => core.ref.email
+      groups_heading: Grupos
       password_label: => core.ref.password
       submit_button: => core.ref.save_changes
       title: Editar Utilizador
+      username_heading: Utilizador
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -258,6 +293,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: Administração
+      back_to_index_tooltip: "Voltar ao Início"
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Perfil
@@ -287,6 +323,7 @@ core:
       forgot_password_link: "Esqueci-me da Palavra-passe?"
       invalid_login_message: Nome de utilizador ou palavra-passe incorretos.
       password_placeholder: => core.ref.password
+      remember_me_label: "Recordar-me"
       sign_up_text: "Não tem uma conta? <a>Registe-se</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -328,6 +365,11 @@ core:
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} mais tarde"
 
+    rename_discussion:
+      submit_button: => core.ref.rename
+      title: Renomear discussão
+
+
     # These translations are used by the search results dropdown list.
     search:
       all_discussions_button: 'Pesquisar por... "{query}"'
@@ -368,6 +410,7 @@ core:
       in_discussion_text: "EM {discussion}"
       joined_date_text: "Entrou há {ago}"
       online_text: Online
+      posts_empty_text: Não existem posts aqui
       posts_load_more_button: => core.ref.load_more
       posts_link: Posts
       settings_link: => core.ref.settings
@@ -506,7 +549,9 @@ core:
     notifications: Notificações
     okay: OK                                     # Referenced by flarum-tags.yml
     password: Palavra-passe
+    posts: Posts
     reply: Responder                                 # Referenced by flarum-mentions.yml
+    rename: Renomear
     reset_your_password: Redefinir a sua Palavra-passe
     restore: Restaurar
     save_changes: Guardar Alterações                   # Referenced by flarum-suspend.yml, flarum-tags.yml
@@ -515,6 +560,7 @@ core:
     some_others: "{count} outro|{count} outros"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Iniciar um Tópico
     username: Nome de Utilizador
+    users: Utilizadores
     write_a_reply: Escreva uma resposta...
     you: Você                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
